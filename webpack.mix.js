@@ -12,4 +12,8 @@ const { mix } = require('laravel-mix');
  */
 
 mix.js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css');
+    .sass('resources/assets/sass/app.scss', 'public/css')
+    .js('resources/assets/js/sb-admin-2.js', 'public/js')
+    .less('resources/assets/less/sb-admin-2.less', 'public/css')
+    .js('resources/assets/data/flot-data.js', 'public/js')
+    .js('resources/assets/data/morris-data.js', 'public/js');
