@@ -14,14 +14,8 @@
     <!-- Bootstrap Core CSS -->
     <link href="{{ asset('bower_components/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
 
-    <!-- MetisMenu CSS -->
-    <link href="{{ asset('bower_components/metisMenu/dist/metisMenu.min.css') }}" rel="stylesheet" type="text/css">
-
     <!-- Custom CSS -->
     <link href="{{ asset('css/sb-admin-2.css') }}" rel="stylesheet" type="text/css">
-
-    <!-- Morris Charts CSS -->
-    <link href="{{ asset('bower_components/morrisjs/morris.css') }}" rel="stylesheet" type="text/css">
 
     <!-- Custom Fonts -->
     <link href="{{ asset('bower_components/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
@@ -33,6 +27,7 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    @yield('styles')
 </head>
 
 <body>
@@ -384,17 +379,10 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="{{ asset('bower_components/bootstrap/dist/js/bootstrap.min.js') }}" type="text/javascript"></script>
 
-    <!-- Metis Menu Plugin JavaScript -->
-    <script src="{{ asset('bower_components/metisMenu/dist/metisMenu.min.js') }}" type="text/javascript"></script>
-
-    <!-- Morris Charts JavaScript -->
-    <script src="{{ asset('bower_components/raphael/raphael.min.js') }}" type="text/javascript"></script>
-    <script src="{{ asset('bower_components/morrisjs/morris.min.js') }}" type="text/javascript"></script>
-    <script src="{{ asset('js/morris-data.js') }}" type="text/javascript"></script>
-
     <!-- Custom Theme JavaScript -->
     <script src="{{ asset('js/sb-admin-2.js') }}" type="text/javascript"></script>
 
+    @yield('scripts')
 </body>
 
 </html>

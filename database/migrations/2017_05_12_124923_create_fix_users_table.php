@@ -14,7 +14,7 @@ class CreateFixUsersTable extends Migration
     public function up()
     {
         Schema::table('users', function(Blueprint $table) {
-            $table->string('address');
+            $table->string('address')->nullable();
 
             // cach 1
             // $table->string('name')->nullable();
